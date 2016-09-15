@@ -125,7 +125,9 @@ sync:
     --include "Distance.c++"                 \
     --include "Distance.h"                   \
     --include "Stack.c++"                    \
+    --include "Stack.h"                      \
     --include "Queue.c++"                    \
+    --include "Queue.h"                      \
     --include "Vector1.c++"                  \
     --exclude "*"                            \
     ../../exercises/c++/ exercises

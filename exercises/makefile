@@ -1,7 +1,11 @@
 .DEFAULT_GOAL := test
 
-FILES :=  \
-    Count
+FILES :=     \
+    Count    \
+    Reverse  \
+    Distance \
+    Stack    \
+    Queue
 
 ifeq ($(shell uname), Darwin)                                        # Apple
     CXX          := g++
