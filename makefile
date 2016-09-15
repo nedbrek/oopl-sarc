@@ -128,6 +128,8 @@ sync:
     --include "Stack.h"                      \
     --include "Queue.c++"                    \
     --include "Queue.h"                      \
+    --include "PriorityQueue.c++"            \
+    --include "PriorityQueue.h"              \
     --include "Vector1.c++"                  \
     --exclude "*"                            \
     ../../exercises/c++/ exercises
