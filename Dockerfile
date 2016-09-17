@@ -1,7 +1,7 @@
 FROM gcc:5.3
 
 RUN apt-get update                      && \
-    apt-get -y install libboost-dev     && \
+    apt-get -y install libboost-all-dev && \
     apt-get -y install cmake            && \
     apt-get -y install clang            && \
     apt-get -y install clang-format-3.5 && \
