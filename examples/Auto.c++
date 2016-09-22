@@ -43,9 +43,9 @@ int main () {
     assert(i         == 2);
     assert(sizeof(i) == sizeof(int));
 
-    auto j = {2};
-    assert(equal(begin(j), end(j), begin({2})));
-    assert(sizeof(j) == sizeof(initializer_list<int>));
+    auto a = {2};
+    assert(equal(begin(a), end(a), begin({2})));
+    assert(sizeof(a) == sizeof(initializer_list<int>));
     }
 
     cout << "Done." << endl;
