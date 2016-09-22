@@ -166,10 +166,9 @@ versions:
 	@echo
 	ls -ald $(INCLUDE)/gtest
 	@echo
-	ls -al /usr/lib
-	ls -al /usr/local/lib
+	ls -al /usr/lib/*boost*.a
 	@echo
-	ls -al $(LIB)/*gtest*
+	ls -al $(LIB)/*gtest*.a
 	@echo
 	which $(CLANG-CHECK)
 	-$(CLANG-CHECK) --version
