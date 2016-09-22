@@ -166,7 +166,8 @@ versions:
 	@echo
 	ls -ald $(INCLUDE)/gtest
 	@echo
-	ls -al $(LIB)/*boost*
+	ls -al /usr/lib
+	ls -al /usr/local/lib
 	@echo
 	ls -al $(LIB)/*gtest*
 	@echo
