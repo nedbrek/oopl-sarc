@@ -135,6 +135,7 @@ sync:
     --include "Vector2.c++"                  \
     --include "Vector2.h"                    \
     --include "Vector3.c++"                  \
+    --include "Vector4.c++"                  \
     --exclude "*"                            \
     ../../exercises/c++/ exercises
 	@rsync -r -t -u -v --delete              \
