@@ -138,6 +138,7 @@ sync:
     --include "Allocator.c++"                \
     --include "Allocator.h"                  \
     --include "Vector3.c++"                  \
+    --include "Vector3.h"                    \
     --include "Move.c++"                     \
     --include "Vector4.c++"                  \
     --exclude "*"                            \
