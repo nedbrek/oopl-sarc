@@ -7,7 +7,8 @@ FILES :=          \
     Stack         \
     Queue         \
     Vector1       \
-    Vector2
+    Vector2       \
+    Allocator
 
 ifeq ($(shell uname), Darwin)                                           # Apple
     CXX          := g++
