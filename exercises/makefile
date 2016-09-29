@@ -6,7 +6,6 @@ FILES :=          \
     Distance      \
     Stack         \
     Queue         \
-    PriorityQueue \
     Vector1       \
     Vector2
 
