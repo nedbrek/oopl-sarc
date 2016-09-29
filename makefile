@@ -140,15 +140,10 @@ sync:
     ../../exercises/c++/ exercises
 	@rsync -r -t -u -v --delete              \
     --include "StrategyPattern1.c++"         \
-    --include "StrategyPattern1.h"           \
     --include "StrategyPattern2.c++"         \
-    --include "StrategyPattern2.h"           \
     --include "StrategyPattern3.c++"         \
-    --include "StrategyPattern3.h"           \
     --include "StrategyPattern4.c++"         \
-    --include "StrategyPattern4.h"           \
     --include "StrategyPattern5.c++"         \
-    --include "StrategyPattern5.h"           \
     --exclude "*"                            \
     ../../patterns/c++/ patterns
 
