@@ -115,6 +115,7 @@ sync:
     --include "Initializations.c++"          \
     --include "SharedPtr.c++"                \
     --include "Iterators.c++"                \
+    --include "FunctionOverloading.c++"      \
     --exclude "*"                            \
     ../../examples/c++/ examples
 	@rsync -r -t -u -v --delete              \
@@ -134,11 +135,11 @@ sync:
     --include "Vector1.h"                    \
     --include "Vector2.c++"                  \
     --include "Vector2.h"                    \
+    --include "Vector3.c++"                  \
+    --include "Vector3.h"                    \
     --include "Memory.h"                     \
     --include "Allocator.c++"                \
     --include "Allocator.h"                  \
-    --include "Vector3.c++"                  \
-    --include "Vector3.h"                    \
     --include "Move.c++"                     \
     --include "Vector4.c++"                  \
     --exclude "*"                            \

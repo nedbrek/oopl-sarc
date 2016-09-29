@@ -1,11 +1,12 @@
 .DEFAULT_GOAL := test
 
-FILES :=            \
-    InitializerList \
-    Auto            \
-    Initializations \
-    SharedPtr       \
-    Iterators
+FILES :=                \
+    InitializerList     \
+    Auto                \
+    Initializations     \
+    SharedPtr           \
+    Iterators           \
+    FunctionOverloading
 
 ifeq ($(shell uname), Darwin)                                           # Apple
     CXX          := g++
