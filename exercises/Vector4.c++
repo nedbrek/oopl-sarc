@@ -74,20 +74,39 @@ TYPED_TEST(VectorFixture, test_5) {
 TYPED_TEST(VectorFixture, test_6) {
     using vector_type = typename TestFixture::vector_type;
 
+                   vector_type           x(10, 2);
+    typename       vector_type::iterator b = begin(x);
+             const vector_type           y = move(x);
+    ASSERT_NE(begin(x), begin(y));
+    ASSERT_EQ(b,        begin(y));}
+
+TYPED_TEST(VectorFixture, test_7) {
+    using vector_type = typename TestFixture::vector_type;
+
     const vector_type x(20, 3);
           vector_type y(10, 2);
     y = x;
     ASSERT_NE(begin(x), begin(y));
     ASSERT_EQ(x, y);}
 
-TYPED_TEST(VectorFixture, test_7) {
+TYPED_TEST(VectorFixture, test_8) {
+    using vector_type = typename TestFixture::vector_type;
+
+             vector_type           x(20, 3);
+             vector_type           y(10, 2);
+    typename vector_type::iterator b = begin(x);
+    y = move(x);
+    ASSERT_NE(begin(x), begin(y));
+    ASSERT_EQ(b,        begin(y));}
+
+TYPED_TEST(VectorFixture, test_9) {
     using vector_type    = typename TestFixture::vector_type;
     using allocator_type = typename TestFixture::allocator_type;
 
     const vector_type x(3, 2, allocator_type());
     ASSERT_TRUE(equal(begin(x), end(x), begin({2, 2, 2})));}
 
-TYPED_TEST(VectorFixture, test_8) {
+TYPED_TEST(VectorFixture, test_10) {
     using vector_type = typename TestFixture::vector_type;
 
     const vector_type x(10, 2);
@@ -99,39 +118,3 @@ TYPED_TEST(VectorFixture, test_8) {
     ASSERT_LE(x, y);
     ASSERT_GT(z, x);
     ASSERT_GE(x, y);}
-
-TYPED_TEST(VectorFixture, test_9) {
-    using vector_type = typename TestFixture::vector_type;
-
-    const vector_type x(10, 2);
-    const vector_type y = x;
-    ASSERT_NE(begin(x), begin(y));
-    ASSERT_EQ(x, y);}
-
-TYPED_TEST(VectorFixture, test_10) {
-    using vector_type = typename TestFixture::vector_type;
-
-                   vector_type           x(10, 2);
-    typename       vector_type::iterator b = begin(x);
-             const vector_type           y = move(x);
-    ASSERT_NE(begin(x), begin(y));
-    ASSERT_EQ(b,        begin(y));}
-
-TYPED_TEST(VectorFixture, test_11) {
-    using vector_type = typename TestFixture::vector_type;
-
-    const vector_type x(20, 3);
-          vector_type y(10, 2);
-    y = x;
-    ASSERT_NE(begin(x), begin(y));
-    ASSERT_EQ(x, y);}
-
-TYPED_TEST(VectorFixture, test_12) {
-    using vector_type = typename TestFixture::vector_type;
-
-             vector_type           x(20, 3);
-             vector_type           y(10, 2);
-    typename vector_type::iterator b = begin(x);
-    y = move(x);
-    ASSERT_NE(begin(x), begin(y));
-    ASSERT_EQ(b,        begin(y));}
