@@ -17,7 +17,7 @@ void* operator new (size_t, void* p) {
 */
 
 template <typename T>
-struct My_Allocator {
+struct my_allocator {
     using value_type = T;
 
     using size_type       = std::size_t;
@@ -29,18 +29,18 @@ struct My_Allocator {
     using       reference =       value_type&;
     using const_reference = const value_type&;
 
-    friend bool operator == (const My_Allocator&, const My_Allocator&) {
+    friend bool operator == (const my_allocator&, const my_allocator&) {
         return true;}
 
-    friend bool operator != (const My_Allocator&, const My_Allocator&) {
+    friend bool operator != (const my_allocator&, const my_allocator&) {
         return false;}
 
-    My_Allocator             ()                     = default;
-    My_Allocator             (const My_Allocator&)  = default;
-    My_Allocator             (      My_Allocator&&) = default;
-    ~My_Allocator            ()                     = default;
-    My_Allocator& operator = (const My_Allocator&)  = default;
-    My_Allocator& operator = (      My_Allocator&&) = default;
+    my_allocator             ()                     = default;
+    my_allocator             (const my_allocator&)  = default;
+    my_allocator             (      my_allocator&&) = default;
+    ~my_allocator            ()                     = default;
+    my_allocator& operator = (const my_allocator&)  = default;
+    my_allocator& operator = (      my_allocator&&) = default;
 
     pointer allocate (size_type n) {
         return static_cast<pointer>(operator new(n * sizeof(value_type)));}
@@ -57,4 +57,4 @@ struct My_Allocator {
 
     template <typename U>
     struct rebind {
-        using other = My_Allocator<U>;};};
+        using other = my_allocator<U>;};};

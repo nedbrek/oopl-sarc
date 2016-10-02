@@ -82,7 +82,7 @@ string q (int&) {            // non-const l-value
     return "q(int&)";}
 
 string q (int&&) {           // r-value
-    return "q(const int&)";}
+    return "q(int&&)";}
 
 
 
@@ -156,7 +156,7 @@ int main () {
 
     assert(q(i)  == "q(int&)");
 //  q(ci);                            // error: no matching function for call to 'q'
-    assert(q(4)  == "q(const int&)");
+    assert(q(4)  == "q(int&&)");
 
     assert(r(i)  == "r(const int&)");
     assert(r(ci) == "r(const int&)");
