@@ -107,6 +107,7 @@ class my_vector {
         my_vector& operator = (my_vector&& rhs) {
             my_destroy(_a, _b, _e);
             _a.deallocate(_b, size());
+            _a = move(rhs._a);
             _b = rhs._b;
             _e = rhs._e;
             rhs._b = nullptr;
