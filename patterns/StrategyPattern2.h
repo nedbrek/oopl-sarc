@@ -34,9 +34,6 @@ class Movie {
                     return 3 * _days_rented;
 
                 case Regular :
-                    return 2 + ((_days_rented > 2) ? (_days_rented - 2) * 2 : 0);
-
-                default :
-                    return -1;}}};
+                    return 2 + ((_days_rented > 2) ? (_days_rented - 2) * 2 : 0);}}};
 
 #endif // StrategyPattern_h
