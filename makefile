@@ -142,6 +142,7 @@ sync:
     --include "Allocator.h"                  \
     --include "Move.c++"                     \
     --include "Vector4.c++"                  \
+    --include "Vector4.h"                    \
     --exclude "*"                            \
     ../../exercises/c++/ exercises
 	@rsync -r -t -u -v --delete              \
