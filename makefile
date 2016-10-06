@@ -150,6 +150,8 @@ sync:
     --include "StrategyPattern3.c++"         \
     --include "StrategyPattern4.c++"         \
     --include "StrategyPattern5.c++"         \
+    --include "SingletonPattern.c++"         \
+    --include "StrategyPattern6.c++"         \
     --exclude "*"                            \
     ../../patterns/c++/ patterns
 

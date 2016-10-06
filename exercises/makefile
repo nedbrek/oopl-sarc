@@ -8,6 +8,7 @@ FILES :=          \
     Queue         \
     Vector1       \
     Vector2       \
+    Vector3       \
     Allocator
 
 ifeq ($(shell uname), Darwin)                                           # Apple

@@ -2,7 +2,7 @@
 // StrategyPattern2.c++
 // --------------------
 
-// http://en.wikipedia.org/wiki/Strategy_pattern
+// https://en.wikipedia.org/wiki/Strategy_pattern
 
 #include "gtest/gtest.h"
 

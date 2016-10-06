@@ -2,11 +2,30 @@
 // StrategyPattern1.c++
 // --------------------
 
-// http://en.wikipedia.org/wiki/Strategy_pattern
+// https://en.wikipedia.org/wiki/Strategy_pattern
 
 #include "gtest/gtest.h"
 
 #include "StrategyPattern1.h"
+
+/*
+class Movie {
+    public:
+        static const int Childrens  = 0;
+        static const int NewRelease = 1;
+        static const int Regular    = 2;
+
+    Childrens
+        $2 for the first 3 days
+        $2 per day after
+
+    NewRelease
+        $3 per day
+
+    Regular
+        $2 for the first 2 days
+        $2 per day after
+*/
 
 using namespace std;
 
