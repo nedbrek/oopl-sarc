@@ -147,6 +147,7 @@ sync:
     ../../exercises/c++/ exercises
 	@rsync -r -t -u -v --delete              \
     --include "StrategyPattern1.c++"         \
+    --include "StrategyPattern1.h"           \
     --include "StrategyPattern2.c++"         \
     --include "StrategyPattern3.c++"         \
     --include "StrategyPattern4.c++"         \
