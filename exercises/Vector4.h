@@ -2,6 +2,8 @@
 // Vector4.h
 // ---------
 
+// http://scottmeyers.blogspot.com/2014/06/the-drawbacks-of-implementing-move.html
+
 #ifndef Vector_h
 #define Vector_h
 
