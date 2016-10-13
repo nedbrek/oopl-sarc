@@ -26,8 +26,8 @@ TYPED_TEST_CASE(SingletonFixture, singleton_types);
 
 TYPED_TEST(SingletonFixture, test_1) {
     using singleton_type = typename TestFixture::singleton_type;
-    ASSERT_EQ(&singleton_type::only(), &singleton_type::only());}
+    ASSERT_EQ(singleton_type::only(), singleton_type::only());}
 
 TYPED_TEST(SingletonFixture, test_2) {
     using singleton_type = typename TestFixture::singleton_type;
-    ASSERT_EQ("Singleton::f()", singleton_type::only().f());}
+    ASSERT_EQ("Singleton::f()", singleton_type::only()->f());}

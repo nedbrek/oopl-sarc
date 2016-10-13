@@ -2,6 +2,8 @@
 // StrategyPattern2.h
 // ------------------
 
+// http://refactoring.com/catalog/replaceTypeCodeWithClass.html
+
 #ifndef StrategyPattern_h
 #define StrategyPattern_h
 
