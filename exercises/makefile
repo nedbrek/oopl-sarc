@@ -9,7 +9,9 @@ FILES :=          \
     Vector1       \
     Vector2       \
     Vector3       \
-    Allocator
+    Allocator     \
+    Vector4       \
+    Move
 
 ifeq ($(shell uname), Darwin)                                           # Apple
     CXX          := g++

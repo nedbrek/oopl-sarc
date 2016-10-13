@@ -144,6 +144,7 @@ sync:
     --include "Move.h"                       \
     --include "Vector4.c++"                  \
     --include "Vector4.h"                    \
+    --include "Registry.c++"                 \
     --exclude "*"                            \
     ../../exercises/c++/ exercises
 	@rsync -r -t -u -v --delete              \
