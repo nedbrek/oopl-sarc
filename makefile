@@ -116,6 +116,7 @@ sync:
     --include "SharedPtr.c++"                \
     --include "Iterators.c++"                \
     --include "FunctionOverloading.c++"      \
+    --include "Maps.c++"                     \
     --exclude "*"                            \
     ../../examples/c++/ examples
 	@rsync -r -t -u -v --delete              \
