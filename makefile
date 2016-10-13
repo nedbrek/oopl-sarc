@@ -144,7 +144,6 @@ sync:
     --include "Move.h"                       \
     --include "Vector4.c++"                  \
     --include "Vector4.h"                    \
-    --include "Registry.c++"                 \
     --exclude "*"                            \
     ../../exercises/c++/ exercises
 	@rsync -r -t -u -v --delete              \
@@ -157,6 +156,7 @@ sync:
     --include "StrategyPattern5.c++"         \
     --include "SingletonPattern.c++"         \
     --include "StrategyPattern6.c++"         \
+    --include "Registry.c++"                 \
     --exclude "*"                            \
     ../../patterns/c++/ patterns
 
