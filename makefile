@@ -153,6 +153,7 @@ sync:
     --include "StrategyPattern2.c++"         \
     --include "StrategyPattern2.h"           \
     --include "StrategyPattern3.c++"         \
+    --include "StrategyPattern3.h"           \
     --include "StrategyPattern4.c++"         \
     --include "StrategyPattern5.c++"         \
     --include "SingletonPattern.c++"         \
