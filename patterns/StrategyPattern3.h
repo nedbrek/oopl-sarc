@@ -1,8 +1,10 @@
-#ifndef STRATEGY_PATTERN_1
-#define STRATEGY_PATTERN_1
+#ifndef STRATEGY_PATTERN_3
+#define STRATEGY_PATTERN_3
 // ------------------
-// StrategyPattern1.h
+// StrategyPattern3.h
 // ------------------
+// http://www.refactoring.com/catalog/replaceTypeCodeWithSubclasses.html
+
 #include <string> // string
 #include <algorithm>
 

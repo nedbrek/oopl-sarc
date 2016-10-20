@@ -6,7 +6,7 @@
 
 #include "gtest/gtest.h"
 
-#include "StrategyPattern5.h"
+#include "StrategyPattern6.h"
 
 using namespace std;
 

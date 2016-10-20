@@ -116,6 +116,7 @@ sync:
     --include "SharedPtr.c++"                \
     --include "Iterators.c++"                \
     --include "FunctionOverloading.c++"      \
+    --include "Maps.c++"                     \
     --exclude "*"                            \
     ../../examples/c++/ examples
 	@rsync -r -t -u -v --delete              \
@@ -152,10 +153,12 @@ sync:
     --include "StrategyPattern2.c++"         \
     --include "StrategyPattern2.h"           \
     --include "StrategyPattern3.c++"         \
+    --include "StrategyPattern3.h"           \
     --include "StrategyPattern4.c++"         \
     --include "StrategyPattern5.c++"         \
     --include "SingletonPattern.c++"         \
     --include "StrategyPattern6.c++"         \
+    --include "Registry.c++"                 \
     --exclude "*"                            \
     ../../patterns/c++/ patterns
 
